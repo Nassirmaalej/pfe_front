@@ -1,0 +1,84 @@
+<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+   	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">
+         <img src="https://www.tunisienumerique.com/wp-content/uploads/orange-tunisie13.jpg">
+         </a>
+        
+       
+       
+        
+         
+    </nav>
+    <br>
+   &nbsp;  <button   (click)="getevent()" ><strong>Show  Event</strong></button>
+			<div class="section-content">
+                <div class="container">
+                    <h2>En train d'écouter la base de données <div class="spinner-border"> </div></h2>
+                    <p>Use the <code>show event
+                    </code>  button to refresh</p>
+                    <div class="spinner-grow text-dark"></div>                     
+                    <div class="spinner-grow text-dark"></div>                     
+                   
+                  
+                    <div class="spinner-grow text-dark"></div> <div class="spinner-grow text-dark"></div>                     
+                   
+                  
+                    <div class="spinner-grow text-dark"></div>
+                    <div class="spinner-grow text-dark"></div>
+                  
+                    <div class="spinner-grow text-dark"></div>
+                    <div class="spinner-grow text-dark"></div>
+                    <div class="spinner-grow text-light"></div>
+                    <div class="spinner-grow text-light"></div>
+                    <div class="spinner-grow text-light"></div>
+                  </div>
+				<h1 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> <strong>Evenements</strong></span></h1>
+				
+        
+    <div class="container">
+        <div class="jumbotron">
+            
+          <br>
+            
+            <table class="table">
+              <thead class="thead-light">
+                <tr>
+                  
+                  <th scope="col"><strong>Titre</strong></th>
+                  <th scope="col"><strong>Type</strong></th>
+                  <th scope="col"><strong>Details</strong></th>
+  
+                </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let r of rule">
+                      <td>{{r.label}}</td>
+                      <td>{{r.type}}</td>
+                      <td>{{r.detail}}</td>
+                   </tr>
+                
+              </tbody>
+            </table>
+          
+            </div>
+      
+        </div>
+        </div>
+
+
+
+
+
