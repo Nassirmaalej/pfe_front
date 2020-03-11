@@ -14,6 +14,7 @@ import { RuleService } from "../Services/rule.service";
 export class RuleComponent implements OnInit {
   rules: Array<any>;
   rule: Observable<rule[]>;
+  connect: Observable<rule[]>;
   clickedEvent = false;
 
   constructor(private ruleService: RuleService,
@@ -30,8 +31,16 @@ export class RuleComponent implements OnInit {
     this.rule = data
       console.log(this.rule)
     });
-    console.log('Deleted');
+    console.log('connected');
+    this.clickedEvent = true;
+    this.ruleService.getconnect().subscribe(data => {
+    this.connect = data
+    console.log('geting data');
+      console.log(this.connect)
+    });
+    
+  }
   }
 
 
-}
+

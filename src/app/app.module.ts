@@ -7,10 +7,12 @@ import { RuleComponent } from './rule/rule.component';
 import { HttpClientModule } from '@angular/common/http';
 import { OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONavMenuModule, ONavbarModule, ScrollTopModule, OSwitchModule, OToastModule } from 'ng-boosted';
  import { FormsModule} from "@angular/forms";
+import { StatComponent } from './stat/stat.component';
 @NgModule({
   declarations: [
     AppComponent,
-    RuleComponent
+    RuleComponent,
+    StatComponent
   ],
   imports: [
     OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONavMenuModule, ONavbarModule, ScrollTopModule, OSwitchModule, OToastModule,
