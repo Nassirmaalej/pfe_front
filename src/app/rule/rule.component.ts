@@ -25,19 +25,27 @@ export class RuleComponent implements OnInit {
   }
 
 
+  getconnect(){
+  this.clickedEvent = true;
+  this.ruleService.getconnect().subscribe(data => {
+  this.connect = data
+  
+    console.log(this.connect)
+  });
+  console.log('connected');
+  }
+
+
+
+
+
   getevent() {
     this.clickedEvent = true;
     this.ruleService.getevent().subscribe(data => {
     this.rule = data
       console.log(this.rule)
     });
-    console.log('connected');
-    this.clickedEvent = true;
-    this.ruleService.getconnect().subscribe(data => {
-    this.connect = data
-    console.log('geting data');
-      console.log(this.connect)
-    });
+    console.log('geting data ...');
     
   }
   }

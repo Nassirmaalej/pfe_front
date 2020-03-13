@@ -26,12 +26,16 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
+              "node_modules/boosted/dist/css/boosted.min.css",
         "node_modules/boosted/dist/css/orangeIcons.css"
+       
+        
             ],
             "scripts": ["node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/chart.js/dist/Chart.js",
-              "node_modules/quill/dist/quill.js"]
+              "node_modules/quill/dist/quill.js"
+            ]
           },
           "configurations": {
             "production": {
